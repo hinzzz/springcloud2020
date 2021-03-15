@@ -1,6 +1,6 @@
 package com.hinz.springcloud.service.impl;
 
-import com.hinz.springcloud.Payment;
+import com.hinz.springcloud.entities.Payment;
 import com.hinz.springcloud.dao.PaymentDao;
 import com.hinz.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;

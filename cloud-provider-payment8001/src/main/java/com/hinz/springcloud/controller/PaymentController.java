@@ -1,7 +1,7 @@
 package com.hinz.springcloud.controller;
 
-import com.hinz.springcloud.CommonResult;
-import com.hinz.springcloud.Payment;
+import com.hinz.springcloud.entities.CommonResult;
+import com.hinz.springcloud.entities.Payment;
 import com.hinz.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +20,8 @@ public class PaymentController
     private PaymentService paymentService;
 
     @PostMapping(value = "/payment/create")
-    public CommonResult create(Payment payment){
+    public CommonResult create(@RequestBody Payment payment){
+        log.info("payment:{}",payment);
         int result = paymentService.create(payment);
         log.info("*****插入结果："+result);
         if (result>0){  //成功
