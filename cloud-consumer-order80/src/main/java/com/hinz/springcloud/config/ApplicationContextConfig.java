@@ -1,5 +1,6 @@
 package com.hinz.springcloud.config;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -12,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig
 {
     @Bean
+    @LoadBalanced//开启restTemplate负载均衡 从eureka server 根据服务名拉取接口 例如：CLOUD-PAYMENT-SERVICE
     public RestTemplate getRestTemplate()
     {
         return new RestTemplate();
