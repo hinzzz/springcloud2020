@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev
+
+config:
+  info: "我也不知道配置了啥"

@@ -13,3 +13,10 @@ Spring Cloud Ribbon 是基于netflix Ribbon实现的一套客户端负载均衡�
 我们很容易使用Ribbon实现自定义的负载均衡算法
 
 https://github.com/Netflix/ribbon/wiki/Getting-Started
+
+
+TODO
+Nacos ap/cp切换原理
+
+nacos 在项目启动时，要先从配置中心拉取配置之后才能启动成功
+springboot的配置文件加载优先级 bootstrap > application.yml
