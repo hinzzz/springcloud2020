@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableDiscoveryClient
 @EnableFeignClients
-@MapperScan(basePackages = {"com.hinz.springcloud.dao"})
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//取消数据源自动创建的配置
 public class SeataOrderService2001Application {
 
