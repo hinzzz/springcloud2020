@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba.domain;
+package com.hinz.springcloud.alibaba.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @auther quanhz
- * @create 2019-12-11 16:41
+ * @create 2020-02-26 15:16
  */
 @Data
 @AllArgsConstructor
